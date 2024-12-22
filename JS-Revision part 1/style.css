@@ -1,0 +1,23 @@
+
+body{
+    background-color: rgb(250, 215, 245);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#js{
+    color: rgb(3, 3, 132);
+    font-weight: bolder;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgb(255, 84, 141);
+}
+h1{
+    font-family: Calibri; 
+    font-style: italic;
+    font-weight: bolder;
+    color:rgb(3, 3, 132) ;
+}
+
+#miniproject{
+    text-shadow: 2px 2px 5px rgb(255, 84, 141);
+}
