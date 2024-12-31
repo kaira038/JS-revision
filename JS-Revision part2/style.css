@@ -1,0 +1,12 @@
+h1{
+    font-family: Calibri; 
+    font-style: italic;
+    font-weight: bolder;
+    color:rgb(3, 3, 132) ;
+}
+#js{
+    color: rgb(3, 3, 132);
+    font-weight: bolder;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(255, 84, 141);
+}
