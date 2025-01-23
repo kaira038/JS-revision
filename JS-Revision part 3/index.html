@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="js">Javscript Revision part 3</h1>
+    <h1>1. Nested Object</h1>
+    <p> Objects inside of other Objects.Allows you to represent more complex data structure, Child Object is enclosed by
+        a Parent Object</p>
+    <h1>2. Array of Object</h1>
+    <h1>3. Sorting Technique</h1>
+    <p> Method used to sort elements of an array in place.</p>
+    <p> Sorts elements as strings in lexicographic order, not alphabetical</p>
+    <p> lexicographic = (alphabet + numbers + symbols) as strings</p>
+    <h1>4. Date Object</h1>
+    <p>Object that contains values that represent date and time.These date and time can be changed and formatted.</p>
+
+    <h1>5. Closure</h1>
+    <p>A function defined inside of another function,
+        the inner function has access to the variables
+        and scope of the outer function.
+        Allow for private variables and state maintenance
+        Used frequently in JS frameworks: React, Vue, Angular</p>
+    <h1>6. SetTimeOut()</h1>
+    <p>function in JavaScript that allows you to schedule
+        the execution of a function after an amount of time
+        Times are approximate -
+        setTimeout(callback, delay);</p>
+    <p>ClearTimeOut()</p>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="endTimer()">End</button>
+    <h1>7. Time()</h1>
+    <p>tool that allows you to measure the time it takes
+        for a section of code or process to execute
+        Great for identifying performance "bottlenecks"</p>
+    <h1>8.Format currency</h1>
+    <p>.toLocaleString() = returns a string with a language
+        sensitive representation of a number</p>
+    <p>.toLocaleString("locale", {options});</p>
+    <h1>9. ES6 - Modules</h1>
+    <p>An external file that contains reusable code
+        that can be imported into other JavaScript files
+        Can contain variables, classes, functions ... and more
+    </p>
+    <h1>10. Asynchronous</h1>
+    <p><b>Synchronous</b> = Executes line by line consecutively in a sequential manner
+        Code that waits for an operation to complete.</p>
+    <p><b>Asynchronous</b> = Allows multiple operations to be performed
+        concurrently without waiting. Doesn't block the execution
+        flow and allows the program to continue.
+        (I/O operations, network requests, fetching data)
+        Handled with: Callbacks, Promises, Async/Await
+    </p>
+    <h1>11. Error handling</h1>
+    <p>An Object that is created to represent a problem that occurs
+        Occur often with user input or establishing a connection</p>
+
+    <pre>
+        try { } = Encloses code that might potentially cause an error
+        catch { } = Catch and handle any thrown Errors from try { }
+        finally { } = (optional) Always executes. Used mostly for clean up
+                    ex. close files, close connections, release resources
+    </pre>
+    <h1 id="sample-dom">12. DOM - Document object model </h1>
+    <p>Object {} - that represents the page you see in the web browser
+        and provides you with an API to interact with it.
+        Web browser constructs the DOM when it loads an HTML document,
+        and structures all the elements in a tree-like representation.
+        JavaScript can access the DOM to dynamically
+        change the content, structure, and style of a web page.
+    </p>
+    <h1>13. Element selector</h1>
+    <p>Methods used to target and manipulate HTML elements
+        They allow you to select one or multiple HTML elements
+        from the DOM (Document Object Model)
+    </p>
+    <pre>
+                                                    returns   
+                                                    
+        1. document.getElementById()          // ELEMENT OR NULL
+        2. document.getElementsClassName()    // HTML COLLECTION
+        3. document.getElementsByTagName()    // HTML COLLECTION
+        4. document.querySelector()           // FIRST matched ELEMENT OR NULL
+        5. document.querySelectorAll()        // NODELIST
+    </pre>
+
+    <h3>samples</h3>
+    <h2 id="Food">Food for us :-</h2>
+    <div class="fruit">Apple</div>
+    <div class="fruit">Orange</div>
+    <div class="fruit">Grape</div>
+
+    <p>Remember : *** If you want to use array methods in HTML collection need to typecast as array.</p>
+
+    <h4>Root vegetables</h4>
+    <ul>
+        <li>Beets</li>
+        <li>Carrot</li>
+        <li>radish</li>
+    </ul>
+
+    <h4>Non-Root vegetables</h4>
+    <ul>
+        <li>tomato</li>
+        <li>coliflower</li>
+        <li>celery</li>
+    </ul>
+
+    <h1>14. Dom Navigation</h1>
+    <p>Navigation = The process of navigating through the structure
+        of an HTML document using JavaScript.
+    </p>
+
+    <pre>
+     .firstElementChild
+     .lastElementChild
+     .nextElementSibling
+     .previousElementSibling
+     .parentElement
+     .children
+    </pre>
+
+    <p><b>samples</b></p>
+
+    <ol id="fruits">
+        <li id="apple">Apple</li>
+        <li id="orange">orange</li>
+        <li id="banana">banana</li>
+    </ol>
+    <ol id="vegetables">
+        <li id="onion">onion</li>
+        <li id="tomato">tomato</li>
+        <li id="potato">potato</li>
+    </ol>
+    <ol id="desserts">
+        <li id="cakes">cakes</li>
+        <li id="pie">pie</li>
+        <li id="ice cream">ice cream</li>
+    </ol>
+
+    <h1>15. ADD/CHANGE html</h1>
+
+    <pre>
+        STEP 1 CREATE THE ELEMENT
+        STEP 2 ADD ATTRIBUTES/PROPERTIES
+        STEP 3 APPEND ELEMENT TO DOM
+    </pre>
+
+    <p><b>samples</b></p>
+
+    <div id="box-1" class="box">
+        <p>BOX 1</p>
+    </div>
+    <div id="box-2" class="box">
+        <p>BOX 2</p>
+    </div>
+    <div id="box-3" class="box">
+        <p>BOX 3</p>
+    </div>
+    <div id="box-4" class="box">
+        <p>BOX 4</p>
+    </div>
+
+    <ul id="berries">
+        <li id="stawberry " class="berry">Stawberry</li>
+        <li id="cranberry" class="berry">Cranberry</li>
+        <li id="rasberry" class="berry">Rasberry</li>
+    </ul>
+
+    <h1>16. Mouse Events</h1>
+    <p> eventListener = Listen for specific events to create interactive web pages
+        events: click, mouseover, mouseout
+        .addEventListener(event, callback);</p>
+
+
+    <div id="myBox">
+        Click me 😊
+    </div>
+    <button id="select">
+        Select and click
+    </button>
+
+    <h1>17. Key Events</h1>
+    <p>
+        events: keydown, keyup
+        document.addEventListener(event, callback);
+    </p>
+
+    <div id="containerForEmoji">
+        <div id="myBox3">
+            🥰
+        </div>
+    </div>
+    <h1>18. Hide /Show an HTML elements</h1>
+
+
+    <img id="car-image" src="./image/sport-car.jpg" width="400px" alt="car">
+    <br>
+    <button id="mybtn">Hide</button>
+
+    <h1>19.NodeLists</h1>
+
+    <pre>
+        NodeList = Static collection of HTML elements by (id, class, element)
+                   Can be created by using querySelectorAll()
+                   Similar to an array, but no (map, filter, reduce) 
+                   NodeList won't update to automatically reflect changes
+    </pre>
+
+    <button class="myButtons">Button 1</button><br>
+    <button class="myButtons">Button 2</button><br>
+    <button class="myButtons">Button 3</button><br>
+    <button class="myButtons">Button 4</button><br>
+    <h1> 20. Class Lists</h1>
+    <pre>
+        Element property in JavaScript used to interact
+        with an element's list of classes (CSS classes)
+        Allows you to make reusable classes for many elements
+        across your webpage.
+    </pre>
+    <button id="myButton">
+        My Button
+    </button>
+    <h3 id="myh3Elemenet">html element</h3>
+
+    <p>Now, create nodelist</p>
+    <button id="btn 1" class="btns">Btn 1</button><br>
+    <button id="btn 2" class="btns">Btn 2</button><br>
+    <button id="btn 3" class="btns">Btn 3</button><br>
+    <button id="btn 4" class="btns">Btn 4</button><br>
+
+    <h1 id="js">Rock-Paper-Scissors</h1>
+
+    <h1>21. Callback hell</h1>
+    <p> Callback Hell = Situation in JavaScript where callbacks
+        are nested within other callbacks to the
+        degree where the code is difficult to read.
+        Old pattern to handle asynchronous functions.
+        Use Promises + async/await to avoid Callback Hell.
+    </p>
+
+    <h1>22. Promises</h1>
+    <p>Promise = An Object that manages asynchronous operations.
+        Wrap a Promise Object around {asynchronous code}
+        "I promise to return a value"
+        PENDING -> RESOLVED or REJECTED
+        new Promise((resolve, reject) => {asynchronous code}).
+    </p>
+
+    <h1>23. Async/Await</h1>
+    <pre>Async/Await =>
+
+     Async = makes a function return a promise
+     Await = makes an async function wait for a promise
+    
+     Allows you write asynchronous code in a synchronous manner
+     Async doesn't have resolve or reject parameters
+     Everything after Await is placed in an event queue
+    </pre>
+
+    <h1>24. JSON</h1>
+    <p>(JavaScript Object Notation) data-interchange format
+        Used for exchanging data between a server and a web application
+        JSON files {key:value} OR [value1, value2, value3]</p>
+
+    <p>JSON.stringify() = converts a JS object to a JSON string.</p>
+    <p>JSON.parse() = converts a JSON string to a JS object</p>
+
+    <h1>25.Cookies</h1>
+    <h1>26.Fetch()</h1>
+    <p>Fetch date from API -- > https://pokeapi.co/</p>
+
+    <input type="text" id="pokemonName" placeholder="Enter pokemon name">
+    <button onclick="fetchData()">Fetch pokemon</button><br>
+
+    <img src="" alt="pokemon-sprite" id="pokemonsprite" style="display: none">
+
+
+
+
+
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
